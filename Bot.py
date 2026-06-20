@@ -12,8 +12,10 @@ import telebot
 from telebot import types
 import sqlite3
 
-TOKEN = "8852668359:AAFwpch1oh-PijSmrX5Uq8YUPuePss6cgpM"
-OWNER_ID = 6920293690
+import os
+
+TOKEN = os.getenv("8852668359:AAFwpch1oh-PijSmrX5Uq8YUPuePss6cgpM")
+OWNER_ID = int(os.getenv("6920293690"))
 
 bot = telebot.TeleBot(TOKEN)
 

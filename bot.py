@@ -14,8 +14,10 @@ import sqlite3
 
 import os
 
-TOKEN = os.getenv("8852668359:AAFwpch1oh-PijSmrX5Uq8YUPuePss6cgpM")
-OWNER_ID = int(os.getenv("6920293690"))
+import os
+
+TOKEN = os.getenv("TOKEN")
+OWNER_ID = int(os.getenv("OWNER_ID"))
 
 bot = telebot.TeleBot(TOKEN)
 
